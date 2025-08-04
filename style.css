@@ -10,8 +10,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 80%;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .sidebar {
@@ -71,20 +71,62 @@ color: white;
     grid-row: 1 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px;
+    grid-template-rows: 10% 30% 30% 30%;
+    gap: 1rem;
 }
+
+.your_projects {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2
+}
+
+.project_1,
+.project_2,
+.project_3,
+.project_4,
+.project_5,
+.project_6 {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    border: solid;
+    font-size: 1rem;
+}
+
+img {
+    width: 2rem;
+}
+
+.projects_icons_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects_icons {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 .announcements {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 10% 30% 30% 30%;
+}
+
+.announcements_header {
+    grid-row: 1 / 2;
 }
 
 .trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 22.5% 22.5% 22.5% 22.5%;
 }
+
+.trending_header {
+    grid-row: 1 / 2;
+}
+
