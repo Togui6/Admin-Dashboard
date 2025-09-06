@@ -24,3 +24,6 @@ Ex :
 }
 400 = valeur initiale
 700 = valeur de strong
+
+Tip 3 :
+Pour changer la couleur d'un SVG, il ouvrir le SVG par un lien google, si c'est un <img src>, ça va être plus compliqué.
